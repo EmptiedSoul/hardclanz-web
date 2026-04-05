@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="$LANG">
+	<head>
+		<meta charset="utf-8">
+		<link href="$WEBROOT/css/css.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>%TITLE% - hardclanz.org</title>
+	</head>
+	<body>
+		<div id="header">
+			<a href="$WEBROOT"><img src="$WEBROOT/favicon.ico" alt></a>
+			<a href="$WEBROOT" id="headerlink">hardclanz.org</a>
+			<span id="headermoto">%MOTO%</span>
+		</div>
+		<div id="menu">
+%!
+html = ''
+if 'buttons' in preferences:
+    for button, link, highlight in preferences['buttons']:
+        if not highlight:
+            html = html + f'<a href=\"{link}\">{button}</a>'
+        else:
+            html = html + f'<a href=\"{link}\"><b>{button}</b></a>'
+    insert = html
+!%
+		</div>
+			<div id="content-wrapper">
+				<div id="main">
+					
+					%DOCCONTENTS%
+				
+				</div>
+				<hr id="sep-line" />
+				<div id="right-sidebar">
+%!
+html = '<ul>'
+if 'sidebar' in preferences:
+    for button, link, highlight in preferences['buttons']:
+        if not highlight:
+            html = html + f'<li><a href=\"{link}\">{button}</a></li>'
+        else:
+            html = html + f'<li><a href=\"{link}\"><b>{button}</b></a></li>'
+    insert = html + '</ul>'
+!%
+				</div>
+			</div>
+	</body>
+</html>

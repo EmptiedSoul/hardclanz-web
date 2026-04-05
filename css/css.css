@@ -1,0 +1,181 @@
+body {
+	max-width: 66.6em;
+	position: relative;
+	background-color: #eee;
+	color: #000;
+	font-family: sans-serif;
+	margin: 0 auto;
+	padding: 0;
+    	border: .1em solid #bbb;
+    	border-top: 0;
+    	box-shadow: 0 0 5px 5px #bbb;
+}
+
+pre,code{
+	margin: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+a {
+	color: #005386;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#header img {
+	vertical-align: bottom;
+}
+
+#header {
+	background-color: #111;
+	clear: both;
+	color: #999;
+	font-size: 1.78em;
+	padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+#headerlink {
+	color: #ccc;
+}
+
+#menu {
+	clear: both;
+        overflow: auto;
+	background-color: #080808;
+	padding: 0.7ex;
+	border: 1px solid #080808;
+}
+
+#menu a {
+	padding: 0.5ex 1ex;
+	text-decoration: none;
+	color: #bbb;
+}
+
+#menu a:hover{
+	background-color: #222;
+}
+
+.right {
+	float: right;
+} 
+h1 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.4em;
+}
+
+h2 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.3em;
+}
+
+h3 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.0em;
+}
+
+h4 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 0.9em;
+}
+
+#content-wrapper {
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+@media (orientation: landscape){
+	#main {
+	width: 77.5%;
+	max-width: 50em;
+	float: left;
+	overflow: auto;
+}
+	#right-sidebar {
+	overflow: auto;
+	width: 20%;
+	float: right;
+  }
+}
+	
+#sep-line {
+	display: none;
+}
+	
+
+@media (orientation: portrait){
+	#main {
+		width: 100%;
+	}
+	#right-sidebar {
+		width: 100%;
+	}
+	.right {
+	   float: inherit;
+	}
+}
+	
+#list {
+	padding: 0.7ex 0.7ex 0.7ex 0.7em;
+	border: 1px solid grey;
+	background-color: #cad0d3;
+}
+
+
+#nb {
+	padding-top: 0.7ex;
+	padding-bottom: 0.7ex;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	border: 1px solid grey;
+	background-color: #cad0d3;
+}
+
+
+
+#main > .recent-news > a {
+	text-decoration: none;
+	font-size: larger;
+}
+#main > .recent-news > a:hover {
+	text-decoration: underline;
+}
+#main > hr {
+	color: #f1f1f1;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #191919;
+	}
+	body {
+		background-color: #0c0c0c;
+		color: #bdbdbd;
+		border: .1em solid #111;
+    		border-top: 0;
+    		box-shadow: 0 0 5px 5px #111;
+
+	}
+	#menu {
+		border-top: 1px solid #222;
+		border-bottom:1px solid #222;
+	}
+	a {
+		color: #56c8ff;
+	}
+	#menu > hr {
+	color: #222;
+	}
+	#nb {
+	    background-color: #111;
+	    color: #ccc;
+	}
+}
+/**/

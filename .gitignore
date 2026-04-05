@@ -1,0 +1,6 @@
+*.html
+test/
+latex/
+*.latex
+*~
+__pycache__
