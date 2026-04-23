@@ -3,7 +3,7 @@ import os
 def get_all_files(directory, filter_string, reverse):
     all_files = []
 
-    for dirpath, dirs, files in os.walk('.'):
+    for dirpath, dirs, files in os.walk(directory):
         if "__pycache__" in dirs:
             dirs.remove("__pycache__")
         for file in files:
