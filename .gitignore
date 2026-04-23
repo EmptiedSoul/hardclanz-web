@@ -4,3 +4,4 @@ latex/
 *.latex
 *~
 __pycache__
+nest/.*

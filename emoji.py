@@ -1,0 +1,6 @@
+substitutes['<3'] = '❤️'
+substitutes[':сердцесбинтом:'] = '❤️‍🩹'
+substitutes['</3'] = '💔'
+substitutes[':-,('] = '😭'
+substitutes[':stars:'] = '✨'
+substitutes[':смех:'] = '😂'
